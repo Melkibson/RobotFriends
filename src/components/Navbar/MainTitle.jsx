@@ -1,6 +1,6 @@
 const MainTitle = ({label}) => {
     return (
-        <h1 className="tc f1">{label}</h1>
+        <h1 className="tc f1 pa1">{label}</h1>
     );
 
 }
