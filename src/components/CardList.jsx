@@ -9,7 +9,7 @@ const CardList = ({ robots }) => {
         id={user.id}
         name={user.name}
         email={user.email}
-        className="tc bg-lightest-blue dib br3 pa3 ma2 grow bw2 shadow-5 w-20"
+        className="tc bg-lightest-blue dib br3 pa3 ma2 grow bw2 shadow-5 max-w-20"
       />
     );
   });
