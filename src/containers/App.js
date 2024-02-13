@@ -3,11 +3,14 @@ import CardList from "../components/CardList";
 import ErrorBoundary from "../components/ErrorBoundary";
 import Navbar from "../components/Navbar";
 import "../index.css";
+import styled from "styled-components";
+
+const VoteHeading = styled.h1`
+  font-family: "Soopafresh", sans-serif;`
 
 const App = () => {
   const [robots, setRobots] = useState([]);
   const [searchfield, setSearchfield] = useState("");
-
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((response) => response.json())
@@ -25,7 +28,7 @@ const App = () => {
   return (
     <div className="mv7 tc">
       <Navbar onChange={onSearchChange} />
-      <ErrorBoundary>
+x      <ErrorBoundary>
         {!robots.length ? (
           <h1 className="tc">Loading...</h1>
         ) : (
