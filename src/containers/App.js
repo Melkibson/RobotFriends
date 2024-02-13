@@ -28,7 +28,8 @@ const App = () => {
   return (
     <div className="mv7 tc">
       <Navbar onChange={onSearchChange} />
-x      <ErrorBoundary>
+      <VoteHeading>Vote for your favorite robot</VoteHeading>;
+      <ErrorBoundary>
         {!robots.length ? (
           <h1 className="tc">Loading...</h1>
         ) : (
